@@ -1,0 +1,52 @@
+<元素定位>
+    <登录页面>
+        <登录地址 url="http://192.168.114.129/adminprov.php/Public/login" />
+        <用户名 property="id" value="account" />
+        <密码 property="id" value="password" />
+        <登录按钮 property="name" value="submit" />
+        <登录成功 property="xpath" value="//p[@class='error']/span"/>
+        <登录失败 property="xpath" value="//p[@class='error']/span"/>
+    </登录页面>
+    <商城管理-商品信息列表>
+        <添加商品按钮 property="xpath" value="//button[@class='pull-right']"/>
+        <商品查找所有分类 property="id" value="cat_id" />
+        <商品查找所有品牌 property="id" value="brand_id" />
+        <商品查找全部 property="id" value="is_on_sale" />
+        <商品查找商品名称搜索框 property="id" value="input-order-id"/>
+        <商品查找商品筛选按钮 property="id" value="button-filter search-order"/>
+        <商品批量删除按钮 property="id" value="goods_more_deleted" />
+        <商城管理批量管理 property="xpath" value="//*[@id='ajax_return']/div/table/thead/tr/th[9]/a[1]"/>
+        <商城管理编辑按钮 property="xpath" value="//*[@id='ajax_return']/div/table/tbody/tr[1]/td[9]/a"/>
+    </商城管理-商品信息列表>
+    <商城管理添加商品>
+        <商品添加iframe property="id" value="iframe"/>
+        <商品名称 property="xpath" value="//input[@name='title']"/>
+        <打标名称 property="id" value="marking"/>
+        <商品简介 property="id" value="err_description"/>
+        <商品分类1 property="xpath" value="//div[@class='drop-wrap clearfix']/div[1]/div/a"/>
+        <商品分类值1 property="xpath" value="//input[@id='first']/../../ul/li[3]"/>
+        <商品分类2 property="xpath" value="//div[@class='drop-wrap clearfix']/div[1]/div/a"/>
+        <商品分类值2 property="xpath" value="//input[@id='second']/../../ul/li[3]"/>
+        <商品分类3 property="xpath" value="//div[@class='drop-wrap clearfix']/div[1]/div/a"/>
+        <商品分类值3 property="xpath" value="//input[@id='three']/../../ul/li[3]"/>
+        <商品品牌 property="id" value="brand_id"/>
+        <供应商 property="id" value="supplier_id"/>
+        <市场价 property="xpath" value="//input[@name='price_market']"/>
+        <会员价 property="xpath" value="//input[@name='price_member']"/>
+        <超市价 property="xpath" value="//input[@name='price_supermarket']"/>
+        <清仓活动价 property="xpath" value="//input[@name='price_clear']"/>
+        <自购返利 property="xpath" value="//input[@name='self_rebate']"/>
+        <上级返利 property="xpath" value="//input[@name='good_rebate']"/>
+        <实际库存数量 property="xpath" value="//input[@name='stock']"/>
+        <总库存 property="xpath" value="//input[@name='total_stock']"/>
+        <商品重量 property="xpath" value="//input[@name='weight']"/>
+        <清仓日期 property="xpath" value="//input[@name='sold_date']"/>
+        <清仓时段 property="id" value="sold_time"/>
+        <所在仓库 property="id" value="send_address"/>
+        <运费模板 property="id" value="freights_id"/>
+        <排序 property="xpath" value="//input[@name='sort']"/>
+        <设置 property="xpath" value="//input[@class='shelves']"/>
+        <商品详情描述iframe property="id" value="ueditor_0"/>
+        <商品详情描述内容 property="xpath" value="//body[@class='view']"/>
+    </商城管理添加商品>
+</元素定位>
